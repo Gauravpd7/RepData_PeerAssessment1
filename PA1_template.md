@@ -81,7 +81,7 @@ median(actmean$totalsteps)
 
 
 ## What is the average daily activity pattern?
-1. Make a time series plot (i.e. \color{red}{\verb|type = "l"|}type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
+1. Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
 
 
 ```r
@@ -121,9 +121,9 @@ maxsteps
 
 
 ## Imputing missing values
-Note that there are a number of days/intervals where there are missing values (coded as \color{red}{\verb|NA|}NA). The presence of missing days may introduce bias into some calculations or summaries of the data.
+Note that there are a number of days/intervals where there are missing values (coded as NA). The presence of missing days may introduce bias into some calculations or summaries of the data.
 
-1. Calculating and reporting the total number of missing values in the dataset (i.e. the total number of rows with \color{red}{\verb|NA|}NAs)
+1. Calculating and reporting the total number of missing values in the dataset (i.e. the total number of rows with NAs)
 
 ```r
 sum(is.na(act))
@@ -205,7 +205,7 @@ factorday <- function(date_val){
 act1$daytype <- as.factor(sapply(act1$date,factorday))
 ```
   
-2. Make a panel plot containing a time series plot (i.e. \color{red}{\verb|type = "l"|}type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). See the README file in the GitHub repository to see an example of what this plot should look like using simulated data.  
+2. Make a panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). See the README file in the GitHub repository to see an example of what this plot should look like using simulated data.  
 
 ```r
 act1 <- act1 %>%
